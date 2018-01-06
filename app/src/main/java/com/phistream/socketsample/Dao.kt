@@ -12,7 +12,7 @@ import com.phistream.socketsample.model.EmployeeRoom
  */
 @Dao
 public interface Dao {
-    @get:Query("SELECT * FROM employeeRoom")
+    @get:Query("SELECT * FROM EmployeeRoom")
     var getEmployees: List<EmployeeRoom>
 
     @Insert(onConflict = OnConflictStrategy.REPLACE)
